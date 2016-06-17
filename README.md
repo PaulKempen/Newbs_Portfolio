@@ -3,7 +3,7 @@ Portfolio Website Project Document Repository
 
 This website was created as part of the coursework for Bachelores of Applied Science in Information System at Olympic College.
 
-It's purpose is to host a group (class/cohort/team/etc) and allow each member to select their areas of focus and tell a little bit about themselves and showcase some selected work samples for potential employers to review.
+Its purpose is to host a group (class/cohort/team/etc) and allow each member to select their areas of focus and tell a little bit about themselves and showcase some selected work samples for potential employers to review.
 
 Some features of this website include:
 - Editable "defining" text from within the admin control page so no html code needs to be edited to tailor this page to your group

@@ -1,0 +1,178 @@
+﻿/*Paul's Mess*/
+body {
+    width:100%;
+    margin:0;
+}
+
+
+.redBord {
+    border:1px solid red;
+}
+
+.redText {
+    color:red;
+}
+
+.noMarg {
+    margin:0;
+}
+
+
+
+#infoForm label {
+    width:130px;
+}
+
+#accountForm {
+    float:none;
+    width:100%;
+}
+
+    #accountForm .row {
+        margin:auto;
+        width:100%;
+    }
+
+#divLog,#firstLogin{
+    text-align:center;
+   
+}
+
+#sort .checkbox, #sort input {
+    float:none;
+    width:auto;
+    text-align:left;
+}
+#infoForm {
+    float:unset;
+}
+
+    #infoForm button {
+        min-width:60px;
+    }
+
+#focusForm {
+    width:160px;
+    margin:auto;
+}
+
+#sort h5 {
+    margin-top:50px;
+}
+
+/*experiment and floater for use with session expire*/
+#experiment {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    background-color:rgba(0,0,0,.5);
+    
+    min-height:100%;
+}
+#floater{
+    text-align:center;
+    margin:18% auto 0 auto;
+    width:100%;
+    padding-top:100px;
+    background-color:white;
+    opacity:unset;
+    min-height:200px;
+}
+
+#picForm {
+    margin-top:50px;
+}
+    #firstLogin form {
+        width:50%;
+        margin:auto;
+        text-align:right;
+    }
+@media (max-width: 735px) {
+     #firstLogin form {
+        width:70%;
+   
+    }
+}
+
+@media (max-width: 723px) {
+     #firstLogin form {
+        width:100%;
+   
+    }
+}
+
+#btnInfoUpdate {
+    margin:0 25%;
+}
+
+
+.line-height-50 {
+    line-height:50px;
+}
+
+#redirectWell {
+    min-height:400px;
+    padding-top:180px;
+    margin-bottom:60px;
+}
+#txtAbout {
+    z-index:-1;
+}
+
+#btnAbout,#btnDesc {
+    position:relative;
+    margin: -98px 0 0 1px;
+    z-index:1;
+}
+.workLabel {
+    width:60px;
+}
+.no-bull {
+    list-style:none;
+}
+    .no-bull button {
+        padding: 0 20px 0 0;
+    }
+#btnAdminSelect {
+    padding:6px 12px;
+}
+.del-button {
+    position:absolute;
+    bottom:0;
+    left:0;
+
+}
+.pw-regex li{
+    line-height:1px;
+    background-color:unset;
+    color:unset;
+    border:none;
+}
+.text-black {
+    color:black;
+}
+
+#indvmain h4 {
+    margin:15px 0 0 0;
+}
+/* file select styles from:http://www.abeautifulsite.net/whipping-file-inputs-into-shape-with-bootstrap-3/ */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}

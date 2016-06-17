@@ -1,0 +1,64 @@
+
+
+div dl, div ol li{
+    text-align: left;
+    padding:0px 20px;
+}
+div dl dt{
+    font-weight: 400;
+}
+div dl dd, div ol li{
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+.colorPreview{
+    height: 20px;
+    width: 60px;
+    padding:0px;
+    margin:0 0 -5px 0;
+    border: 2px black solid;
+    display: inline-block;
+}
+
+.colorPreview:hover{
+    cursor: pointer;
+    border-color: yellow;
+}
+
+.colorList{
+    text-align: left;
+    width: fit-content;
+    margin:10px auto;
+    
+}
+
+.spanBuffer{
+    min-width:60px;
+    display: inline-block;
+}
+
+.colorDesc{
+    min-width:200px;
+    display: inline-block;
+}
+
+.colorHex{
+    width: 60px;
+    
+}
+
+#testColor{
+    height:30px;
+    width:100%;
+    border:1px solid black;
+    margin:15px;
+}
+
+
+.admin-nav{
+    width:100%;
+    text-align:left;
+
+}
+

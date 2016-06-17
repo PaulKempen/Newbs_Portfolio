@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <title>OC B'17 Portfolio Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/siteMain.css" rel="stylesheet" />
+    <link href="css/siteColors.css" rel="stylesheet" />
+
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/siteMain.js"></script>
+</head>
+
+<body>
+    <div id="bodyWrap" class="container-fluid noPad body-spacers">
+
+        <!--HEADER-->
+        <div class="container-fluid header-general" id="fullpage">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="row header-general">
+
+                        <!--TITLES-->
+                        <div class="col-sm-7">
+                            <div class="navbar-header">
+                                <h2 id="pretitle" class="header-group"></h2>
+                                <h1 id="title" class="header-title">FAQ</h1>
+                            </div>
+                        </div>
+
+                        <!--Login|Search & NAV-->
+                        <div class="col-md-5 col-sm-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="hidden" value="faq" id="page">
+                                    <form method="get" action="search.html" role="form">
+                                        <div class="form-group">
+                                            <!-- login/logout hook-->
+                                            <span id="log"></span>&nbsp;&nbsp; |
+                                            <label for="findTerm" aria-label="Search"><button class="btn btn-link header-link"><span class="glyphicon glyphicon-search"></span></button></label>
+                                            <input type="search" name="findTerm">
+                                        </div>
+                                    </form>
+                                    <button type="button" class="navbar-toggle borders-main" data-toggle="collapse" data-target="#mainNavBar">
+                                        <span class="icon-bar header-nav-current"></span>
+                                        <span class="icon-bar header-nav-current"></span>
+                                        <span class="icon-bar header-nav-current"></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- welcome, [name] hook - also for fixing nav spacing issue -->
+                            <div class="row buffer">
+                                <div class="col-md-8 col-md-offset-4 col-sm-6 col-sm-offset-6" id="user"></div>
+                            </div>
+
+                            <!-- colapsable navigation -->
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="collapse navbar-collapse" id="mainNavBar">
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li class="header-nav"><a class="header-nav" href="index.html">HOME</a></li>
+                                            <li class="header-nav"><a class="header-nav" href="about.html">ABOUT</a></li>
+                                            <li class="header-nav"><a class='header-nav' href="viewAll.html">PORTFOLIOS</a></li>
+                                            <li class="header-nav-current"><a class="header-nav-current" href="faq.html">FAQ</a></li>
+                                            <li class="header-nav"><a class="header-nav" href="contact.html">CONTACT</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- message display hook (buffer on this page) -->
+        <div class="container body-general borders-main" id="msg"></div>
+
+        <!--MAIN SECTION-->
+        <div class="section body-general borders-main">
+            <div class="row noMarg borders-content">
+
+                <!--QUESTIONS-->
+                <div class="col-md-offset-1 col-md-5">
+                    <div class="well well-sm body-content">
+                        <!--Question hook-->
+                        <div class="panel-group" id="questionPanel">
+                            <!--
+                            <button type="button" class="btn btn-primary btn-block panel-body panel-button" value="q1">
+                                Question #1
+                            </button>
+                            -->
+                        </div>
+                    </div>
+                </div>
+
+                <!--ANSWERS-->
+                <div class="col-md-5">
+                    <!-- Answer hook-->
+                    <div class="well well-sm body-content" id="answerwell">
+                        <!--
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--FOOTER-->
+        <div class="footer footer-general">
+            <div class="row">
+                <div class="col-sm-4 col-sm-offset-2">
+                    <!--Social Media Share Icons-->
+                    <div id="share-buttons">
+                        <!-- Facebook -->
+                        <a id="fbShare" href="http://www.facebook.com/sharer.php?u={ThisPage}" target="_blank">
+                            <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                        </a>
+
+                        <!-- Google+ -->
+                        <a id="gpShare" href="https://plus.google.com/share?url={ThisPage}" target="_blank">
+                            <img src="https://simplesharebuttons.com/images/somacro/google.png" alt="Google" />
+                        </a>
+
+                        <!-- LinkedIn -->
+                        <a id="liShare" href="http://www.linkedin.com/shareArticle?mini=true&amp;url={ThisPage}" target="_blank">
+                            <img src="https://simplesharebuttons.com/images/somacro/linkedin.png" alt="LinkedIn" />
+                        </a>
+
+                        <!-- Twitter -->
+                        <a id="twShare" href="https://twitter.com/share?url={ThisPage}&amp;text=Exceptional%20Individual%20Found&amp;hashtags=ExceptionalIndividual" target="_blank">
+                            <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
+                        </a>
+
+                        <!-- Email -->
+                        <a id="emailShare" href="mailto:?Subject=Sharing%20Portfolios&amp;Body=I%20saw%20this%20and%20thought%20you%20might%20like%20this%20 {ThisPage}">
+                            <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
+                        </a>
+
+                        <!-- Print -->
+                        <a href="javascript:;" onclick="window.print()">
+                            <img src="https://simplesharebuttons.com/images/somacro/print.png" alt="Print" />
+                        </a>
+                    </div>
+                </div>
+                    <div class="col-sm-4">
+                    <!--Copyright Info hook-->
+                    <p id="copyright">
+
+                    </p>
+                    
+                </div>
+                </div>
+                <div class="row">
+                    
+                <!--Site Map-->
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                    <ul id="siteMap">
+                        <li><a class="footer-links" href="index.html">Home</a></li>
+                        <li><a class="footer-links" href="viewAll.html">Portfolios</a></li>
+                        <li><a class="footer-links" href="about.html">About Us</a></li>
+                        <li><a class="footer-links" href="faq.html">FAQ</a></li>
+                        <li><a class="footer-links" href="contact.html">Contact Us</a></li>
+                        <li><a class="footer-links" href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- footer text hook -->
+            <address class="text-center" id="foot"></address>
+
+        </div>
+
+    </div>
+</body>
+</html>

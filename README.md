@@ -56,3 +56,10 @@ Make sure these are set as followed:
 - auth_username=(gmail email address which i would recommend be created specifically for this and not use a personal account)
 - auth_password=(password to above email address)
 - force_sender=(gmail email address repeated)
+
+#Once the website is operational
+initial admin acount is:
+- username: siteAdmin
+- password: Password1
+
+It is strongly recommended to change this password and make your own admin accounts, at which point this one can be deleted.
